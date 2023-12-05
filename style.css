@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   background-color: rgb(247, 247, 202);
+  margin: 0;
 }
 #title {
   display: flex;
@@ -21,14 +22,27 @@ nav > ul {
 li {
   border: 2px solid black;
   padding: 8px;
+  border-radius: 5px;
 }
 .size {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  gap: 12px;
+}
+#gridSize {
+  width: 180px;
 }
 .size > button {
+  border: 1px solid black;
   font-size: large;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease-in-out; 
 }
 #main-container {
   border-width: 15px;
@@ -44,7 +58,20 @@ li {
 
 #main-container > div {
   box-sizing: border-box;
-  border: 1px solid black;
   width: var(--grid-size);
   height: var(--grid-size);
+}
+.active {
+ background-color: rgb(103, 133, 103);
+}
+.clear:active {
+  transform: scale(0.9);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
 }
