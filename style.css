@@ -48,7 +48,3 @@ li {
   width: var(--grid-size);
   height: var(--grid-size);
 }
-
-#main-container > div:hover {
-  background-color: lightgray;
-}
