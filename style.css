@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(247, 247, 202);
+}
+#title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#title > h1 {
+  font-size: 50px;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  font-size: 20px;
+  padding: 0;
+}
+li {
+  border: 2px solid black;
+  padding: 8px;
+}
+.size {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.size > button {
+  font-size: large;
+}
+#main-container {
+  border-width: 15px;
+  border-style: double;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  --grid-size: 6.25%;
+}
+
+#main-container > div {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: var(--grid-size);
+  height: var(--grid-size);
+}
+
+#main-container > div:hover {
+  background-color: lightgray;
+}
