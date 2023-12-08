@@ -1,1 +1,2 @@
 # Etch-a-Sketch
+The Etch-a-Sketch project was invaluable to me as it provided a hands-on opportunity to explore and implement interactive graphics within a web environment, allowing me to enhance my coding skills, gain insights into user interface design, and deepen my understanding of event-driven programming.
