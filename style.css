@@ -42,7 +42,7 @@ li {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  transition: transform 0.2s ease-in-out; 
+  transition: transform 0.2s ease-in-out;
 }
 #main-container {
   border-width: 15px;
@@ -62,7 +62,7 @@ li {
   height: var(--grid-size);
 }
 .active {
- background-color: rgb(103, 133, 103);
+  background-color: rgb(103, 133, 103);
 }
 .clear:active {
   transform: scale(0.9);
@@ -74,4 +74,11 @@ footer {
   background-color: black;
   color: white;
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  #main-container {
+    width: 330px;
+    height: 330px;
+  }
 }
